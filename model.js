@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-mongoose.connect('mongodb://test:123456@localhost:27017/test', { autoIndex: false });
+var config = require('./config')
+
+mongoose.connect(config.mongolink, { autoIndex: false });
 
 var User = mongoose.model('User', new Schema({ 
     username: String, 
