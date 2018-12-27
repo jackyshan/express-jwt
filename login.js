@@ -15,7 +15,7 @@ route.post('/login', function(req, res){
         return
     }
 
-    User.findOne({username:username, password: password}).then((data)=>{
+    User.findOne({username:username, password: common.md5(password)}).then((data)=>{
         return new Promise((resolve, reject)=>{
             if(data){
                 resolve(data)
@@ -26,7 +26,6 @@ route.post('/login', function(req, res){
             }
         })
     }).then((data)=>{
-        console.log(typeof(data))
         console.log(data)
         var token = common.signtoken(JSON.stringify(data))
         res.send(response.succ("用户登录成功", {token: token}))

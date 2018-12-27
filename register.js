@@ -3,6 +3,7 @@ var model = require('./model')
 var User = model.user
 var express = require('express')
 var route = express.Router()
+var common = require('./common')
 
 route.post('/register', (req, res) => {
     var username = req.body.username
@@ -30,7 +31,7 @@ route.post('/register', (req, res) => {
         //存储
         return new User({
             username: username,
-            password: password
+            password: common.md5(password)
         }).save()
     }).then((data) => {
         console.log(data)
