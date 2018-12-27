@@ -16,6 +16,7 @@
     "md5": "^2.2.1",
     "mongoose": "^5.4.0",
     "nodemailer": "^4.7.0",
-    "redis": "^2.8.0",
+    "qcloudsms_js": "^0.1.1",
+    "redis": "^2.8.0"
   }
 }

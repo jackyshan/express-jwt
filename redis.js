@@ -1,6 +1,6 @@
-
+var config = require('./config')
 var redis = require('redis')
-var client = redis.createClient()
+var client = redis.createClient(6379, config.redislink)
 
 var setkv = function setkv(key,value,expire){
     return new Promise((resolve)=>{

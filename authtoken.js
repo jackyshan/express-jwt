@@ -10,7 +10,7 @@ module.exports = function(req, res, next){
                 next()
             }
             else{
-                res.send(response.err("无效的token,请重新登录"))
+                res.send(response.out("无效的token,请重新登录"))
             }
         })
     }
