@@ -15,6 +15,6 @@ module.exports = function(req, res, next){
         })
     }
     else{
-        res.send(response.err("没有传token"))
+        res.send(response.err("没有传token,请先登录"))
     }
 }
