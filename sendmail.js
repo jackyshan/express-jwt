@@ -1,4 +1,5 @@
-var config = require('./mailconfig')
+var vconfig = require('./config')
+var config = vconfig.mail
 
 const nodemailer = require('nodemailer');
 // create reusable transporter object using the default SMTP transport
