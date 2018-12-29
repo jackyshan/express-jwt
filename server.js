@@ -9,6 +9,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse application/json
 app.use(bodyParser.json())
 
+//mongodb
+require('./mongoconn')
+
 //api
 var api = require('./api')
 api(app)
