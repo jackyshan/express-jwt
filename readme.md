@@ -2,6 +2,8 @@
 
 ```
 npm install
+
+npm install nodemon -g
 ```
 
 ### docker安装mongo

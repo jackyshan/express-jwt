@@ -1,4 +1,4 @@
-var isthinkpad=false
+var isthinkpad=true
 var mail = {
     host: 'smtp.163.com',
     user: 'bugsformyapps@163.com', // generated ethereal user
