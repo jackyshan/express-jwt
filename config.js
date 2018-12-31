@@ -1,10 +1,10 @@
 var isthinkpad=true
 var mail = {
     host: 'smtp.163.com',
-    user: 'bugsformyapps@163.com', // generated ethereal user
-    pass: 'E54kcpgp75tD1', // generated ethereal password
-    from: '"Fred Foo" <bugsformyapps@163.com>', // sender address
-    to: '1393210619@qq.com,', // list of receivers
+    user: 'xxxxx@163.com', // generated ethereal user
+    pass: 'xxxx', // generated ethereal password
+    from: '"Fred Foo" <xxxx@163.com>', // sender address
+    to: 'xxxx@qq.com,', // list of receivers
 }
 
 module.exports = {
